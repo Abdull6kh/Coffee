@@ -27,6 +27,7 @@
 }
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body {
     margin: 0;
@@ -61,6 +62,10 @@ img {
     align-items: center;
     padding: 40px 0;
 }
+.site-logo-link:hover {
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
 .header-nav {
     margin-left: auto;
 }
@@ -82,7 +87,11 @@ img {
     color: #333333;
     text-decoration: none;
 }
-
+.header-link:hover {
+    opacity: 0.7;
+    box-shadow: 4px 4px 4px 4px #888;
+    transition: all 0.3s ease;
+}
 .intro {
     position: relative;
     padding: 116px 0 281px;
@@ -98,6 +107,10 @@ img {
 .intro-left {
     width: 464px;
     margin-left: 120px;
+}
+.intro-left:hover {
+    box-shadow: 2px 2px 10px #888;
+    transition: all 1s ease;
 }
 .intro-title {
     margin: 0 0 24px;
@@ -115,6 +128,10 @@ img {
     line-height: 24px;
     color: #000000;
 }
+.intro-text:hover, .intro-title:hover {
+    opacity: 0.6;
+    transition: all 0.4s ease;
+}
 .intro-link {
     padding: 16px 24px;
     font-style: normal;
@@ -127,9 +144,20 @@ img {
     text-decoration: none;
     background: #0A775F;
     border-radius: 100px;
+    border: 3px solid transparent;
+}
+.intro-link:hover {
+    color: #0A775F;
+    background-color: #fff8dc;
+    border: 3px solid #0A775F;
+    transition: all 0.4s ease;
 }
 .intro-img {
     position: absolute;
     top: -10%;
     left: 50%;
+}
+.intro-img:hover {
+    opacity: 0.8;
+    transition: all 0.3s ease;
 }
