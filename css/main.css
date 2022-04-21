@@ -62,9 +62,11 @@ img {
     align-items: center;
     padding: 40px 0;
 }
+.site-logo-link {
+    transition: all 0.3s ease;
+}
 .site-logo-link:hover {
     opacity: 0.8;
-    transition: all 0.3s ease;
 }
 .header-nav {
     margin-left: auto;
@@ -86,15 +88,15 @@ img {
     letter-spacing: 1px;
     color: #333333;
     text-decoration: none;
+    transition: all 0.3s ease;
 }
 .header-link:hover {
     opacity: 0.7;
     box-shadow: 4px 4px 4px 4px #888;
-    transition: all 0.3s ease;
 }
 .intro {
     position: relative;
-    padding: 116px 0 281px;
+    padding: 116px 0 257px;
     background-color: #F3D7B7;
     background-image: url("../images/img2.png");
     background-repeat: no-repeat;
@@ -107,11 +109,11 @@ img {
 .intro-left {
     width: 464px;
     margin-left: 120px;
+    padding-bottom: 24px;
+    transition: all 1s ease;
 }
 .intro-left:hover {
-    padding-bottom: 24px;
     box-shadow: 2px 2px 10px #888;
-    transition: all 1s ease;
 }
 .intro-title {
     margin: 0 0 24px;
@@ -120,6 +122,7 @@ img {
     font-size: 64px;
     line-height: 75px;
     color: #000000;
+    transition: all 0.4s ease;
 }
 .intro-text {
     margin: 0 0 34px;
@@ -128,10 +131,10 @@ img {
     font-size: 16px;
     line-height: 24px;
     color: #000000;
+    transition: all 0.4s ease;
 }
 .intro-text:hover, .intro-title:hover {
     opacity: 0.6;
-    transition: all 0.4s ease;
 }
 .intro-link {
     padding: 16px 24px;
@@ -146,19 +149,19 @@ img {
     background: #0A775F;
     border-radius: 100px;
     border: 3px solid transparent;
+    transition: all 0.4s ease;
 }
 .intro-link:hover {
     color: #0A775F;
     background-color: #fff8dc;
     border: 3px solid #0A775F;
-    transition: all 0.4s ease;
 }
 .intro-img {
     position: absolute;
     top: -10%;
     left: 50%;
+    transition: all 0.3s ease;
 }
 .intro-img:hover {
     opacity: 0.8;
-    transition: all 0.3s ease;
 }
