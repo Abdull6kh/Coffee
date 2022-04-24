@@ -143,7 +143,7 @@ img {
     color: #000000;
     transition: all 0.4s ease;
 }
-.inner-intro__text:hover, .left-intro__title:hover {
+.inner-intro__text:hover, .inner-intro__title:hover {
     opacity: 0.6;
 }
 .inner-intro__link {
