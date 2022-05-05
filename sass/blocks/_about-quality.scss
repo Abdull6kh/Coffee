@@ -1,0 +1,63 @@
+.quality {
+    position: relative;
+    padding: 0 20px;
+}
+.quality__illustration {
+    position: relative;
+    height: 510px;
+    background-image: url("../images/bgi-choose.png");
+    background-repeat: no-repeat;
+    background-size: 100% 510px;
+    background-position: top;
+    background-color: $choose-bgc;
+    background-blend-mode: overlay;
+
+    &::before {
+        position: absolute;
+        top: -80px;
+        right: calc(50% - 705px);
+        display: block;
+        width: 550px;
+        height: 500px;
+        background-image: url("../../images/about-qualityb-bg.png");
+        background-repeat: no-repeat;
+        background-size: 550px 500px;
+        background-blend-mode: normal;
+        content: '';
+    }
+}
+.quality__inner {
+    padding: 100px 0 118px 143px;
+}
+.quality__info {
+    width: 639px;
+    margin-right: auto;
+}
+.quality-title {
+    text-align: left;
+    margin-bottom: 24px;
+}
+.quality__text {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: $third-text-color;
+    opacity: 0.8;
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+    .quality__illustration {
+        background-image: url("../images/bgi-choose@2x.png");
+    }
+    .quality__illustration::before {
+        background-image: url("../../images/about-qualityb-bg@2x.png");
+    }
+} 

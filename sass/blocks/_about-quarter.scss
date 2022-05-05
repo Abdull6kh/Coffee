@@ -1,0 +1,76 @@
+.quarter {
+    position: relative;
+    margin-bottom: 50px;
+    padding: 20px 20px 0;
+}
+.quarter__illustration {
+    padding: 50px 0 100px;
+    background-image: url("../images/bgi-work.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: top;
+    background-color: $work-bgc;
+    background-blend-mode: overlay;
+}
+.quarter-list {
+    margin-bottom: 0;
+}
+.item-quarter {
+    &::before {
+        position: absolute;
+        z-index: 2;
+        top: 45px;
+        right: 55px;
+        display: block;
+        width: 120px;
+        height: 143px;
+        background-image: url("../images/about-headquarters1.svg");
+        background-repeat: no-repeat;
+        background-size: 120px 143px;
+        content: '';
+    }
+    &:nth-child(2)::before {
+        position: absolute;
+        z-index: 2;
+        top: 45px;
+        right: 55px;
+        display: block;
+        width: 120px;
+        height: 120px;
+        background-image: url("../images/about-headquarters2.svg");
+        background-repeat: no-repeat;
+        background-size: 120px 120px;
+        content: '';
+    }
+    &:nth-child(3)::before {
+        position: absolute;
+        z-index: 2;
+        top: 45px;
+        right: 55px;
+        display: block;
+        width: 120px;
+        height: 107px;
+        background-image: url("../images/about-headquarters3.svg");
+        background-repeat: no-repeat;
+        background-size: 120px 107px;
+        content: '';
+    }
+}
+.item-quarter__info {
+    width: 160px;
+}
+.quarter-info  {
+    margin-top: 47px;
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+    .quarter__illustration {
+        background-image: url("../images/bgi-work@2x.png");
+    }
+} 

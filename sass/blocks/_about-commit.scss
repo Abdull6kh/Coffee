@@ -1,0 +1,70 @@
+.commit {
+    position: relative;
+    margin-bottom: 160px;
+    padding: 20px;
+
+    &::before {
+        position: absolute;
+        top: 100px;
+        left: calc(50% - 910px);
+        display: block;
+        width: 402px;
+        height: 300px;
+        background-image: url("../images/bgi1.svg");
+        background-repeat: no-repeat;
+        background-size: 402px 300px;
+        content: '';
+    }
+    &::after {
+        position: absolute;
+        top: 180px;
+        left: calc(50% - 540px);
+        display: block;
+        width: 360px;
+        height: 364px;
+        background-image: url("../../images/about-commit-img.png");
+        background-repeat: no-repeat;
+        background-size: 360px 364px;
+        content: '';
+    }
+}
+.commit__illustration {
+    background-color: $collection-bgc;
+    background-image: url("../../images/bgi-collection.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-blend-mode: overlay;
+}
+.commit__inner {
+    padding: 160px 64px 200px 165px;
+}
+.commit__info {
+    width: 626px;
+    margin-left: auto;
+}
+.commit-title {
+    text-align: left;
+    margin-bottom: 24px;
+}
+.commit__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: $main-text-color;
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .commit::after {
+    background-image: url("../../images/about-commit-img@2x.png");
+  }
+  .commit__illustration {
+    background-image: url("../images/bgi-collection@2x.png");
+  }
+} 
