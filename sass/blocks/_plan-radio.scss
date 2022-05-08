@@ -66,6 +66,18 @@
 .item-form {
     margin-bottom: 60px;
 }
+.input {
+    &:checked ~ .label__info {
+        background-color: $work-bgc;
+    }
+    &:checked ~ .label__info > .label__title {
+        color: $third-text-color;
+    }
+    &:checked ~ .label__info > .label__text {
+        color: $third-text-color;
+    }
+
+}
 .item-form__main {
     display: flex;
     align-items: baseline;
@@ -79,6 +91,12 @@
     font-size: 28px;
     line-height: 33px;
     color: #555555;
+    border-bottom: 3px dashed transparent;
+
+    &:hover {
+        color: $second-text-color;
+        border-bottom: 3px dashed #C99B67;
+    }
 }
 .item-form__info {
     display: flex;
@@ -92,7 +110,7 @@
     font-size: 40px;
     line-height: 47px;
     font-variant: small-caps;
-    color: #000000;
+    color: $second-text-color;
 }
 .title-none {
     margin-right: 0;
@@ -100,7 +118,7 @@
 .label__info {
     width: 208px;
     padding: 30px 12px 80px 16px;
-    background-color: #C5DBCF;
+    background-color: $collection-bgc;
 }
 .info-2 {
     padding: 30px 32px 56px 16px;
@@ -121,14 +139,14 @@
     font-size: 24px;
     line-height: 28px;
     font-variant: small-caps;
-    color: #333333;
+    color: $main-text-color;
 }
 .label__text {
     margin: 0;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-    color: #333333;
+    color: $main-text-color;
 }
 .form-bottom {
     display: flex;
@@ -136,25 +154,25 @@
     width: 660px;
     padding: 40px 20px;
     margin-bottom: 20px;
-    background-color: #C99B67;
+    background-color: $choose-bgc;
 }
 .form-bottom__title {
     margin-bottom: 14px;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    color: #FFFFFF;
+    color: $third-text-color;
 }
 .form-bottom__text {
     font-weight: 500;
     font-size: 24px;
     line-height: 34px;
-    color: #FFFFFF;
+    color: $third-text-color;
 }
 .black {
     display: inline;
     margin: 0;
-    color: #333333;
+    color: $main-text-color;
 }
 .radio-link {
     display: block;
