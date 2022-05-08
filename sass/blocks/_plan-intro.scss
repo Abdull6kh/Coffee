@@ -1,0 +1,38 @@
+.plan-intro {
+    position: relative;
+    padding: 116px 0 227px;
+    background-color: $header-intro-footer-bgc;
+    background-image: url("../../images/plan-intro.png"), url("../images/bgi-header.png");
+    background-repeat: no-repeat;
+    background-size:  710px 596px, 100%;
+    background-position: calc(50% + 415px) bottom, center center;
+    background-blend-mode: normal, overlay;
+
+    &::before {
+        position: absolute;
+        top: -60px;
+        left: calc(50% - 27px);
+        display: block;
+        width: 160px;
+        height: 160px;
+        background-image: url("../images/img1.png");
+        background-repeat: no-repeat;
+        background-size: 160px 160px;
+        content: '';
+    }
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .plan-intro {
+    background-image: url("../images/plan-intro@2x.png"), url("../images/bgi-header@2x.png");
+  }
+  .plan-intro::before {
+        background-image: url("../images/img1@2x.png");
+  }
+}

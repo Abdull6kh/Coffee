@@ -5,7 +5,7 @@
     background-image: url("../images/img2.png"), url("../images/bgi-header.png");
     background-repeat: no-repeat;
     background-size:  710px 696px, 100%;
-    background-position: calc(50% + 400px) bottom, center center;
+    background-position: calc(50% + 405px) bottom, center center;
     background-blend-mode: normal, overlay;
 
     &::before {
@@ -43,7 +43,7 @@
     color: $second-text-color;
     transition: all 0.4s ease;
 }
-.inner-intro__link {
+.inner-intro-link {
     display: inline-block;
     padding: 16px 24px;
     font-style: normal;
